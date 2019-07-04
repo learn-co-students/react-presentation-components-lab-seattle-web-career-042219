@@ -4,17 +4,17 @@ import React, {Component} from 'react'
 class SimpleComponent extends Component {
 
 	state = {
-		mood: 'happy'
+		mood: "happy"
 	}
 
 	render() {
 		return (
-			<div onClick={this.handleClick} > {this.state.mood} </div>
+			<div onClick={this.handleClick} >{this.state.mood}</div>
 		)
 	}
 
 	handleClick = ev => {
-		this.setState(prevState => prevState.mood === 'happy' ? {mood: 'sad'} : {mood: 'happy'})
+		this.setState(prevState => prevState.mood === "happy" ? {mood:"sad"} : {mood:"happy"})
 	}
 }
 
